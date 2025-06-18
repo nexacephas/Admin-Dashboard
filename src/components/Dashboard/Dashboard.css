@@ -1,0 +1,83 @@
+.dashboard-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1e1e2f; /* or your theme bg */
+}
+
+
+.dashboard-charts,
+.dashboard-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* When sidebar is collapsed */
+.sidebar.collapsed + .dashboard-container {
+  margin-left: 80px;
+}
+/* Dashboard.css */
+
+.dashboard-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.dashboard-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-lists {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-container,
+.booking-chart-container,
+.recent-bookings,
+.upcoming-trip,
+.quick-actions,
+.stats-grid > .stat-card,
+.welcome-card {
+  background-color: var(--card-bg, #1f1f2e);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.chart-container:hover,
+.booking-chart-container:hover,
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary, #fff);
+}
+.dashboard {
+  display: flex;
+  gap: 2rem; /* <- this causes large space */
+  padding: 1.5rem;
+}
+`

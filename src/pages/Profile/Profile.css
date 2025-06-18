@@ -1,0 +1,130 @@
+:root {
+  --text-color: #f0f0f0;
+  --input-bg: #1f1f2e;
+  --card-bg: #252539;
+  --border-color: #444;
+  --accent-color: #4caf50;
+  --btn-color: #2196f3;
+}
+
+.profile-page {
+  padding: 2rem;
+  color: var(--text-color);
+  background: #1b1b2e;
+  min-height: 100vh;
+}
+
+.profile-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-top {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.upload-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: var(--accent-color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info label {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  color: #ccc;
+}
+
+.profile-info input {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--input-bg);
+  color: var(--text-color);
+}
+
+.profile-bottom {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.preferences,
+.change-password {
+  flex: 1;
+  min-width: 280px;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.preferences h4,
+.change-password h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.preferences label,
+.change-password label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #bbb;
+}
+
+.preferences input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.change-password input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--input-bg);
+  color: var(--text-color);
+}
+
+.change-password button {
+  background: var(--btn-color);
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.change-password button:hover {
+  background: #1976d2;
+}

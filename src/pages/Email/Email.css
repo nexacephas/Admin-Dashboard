@@ -1,0 +1,249 @@
+/* src/Pages/Email/Email.css */
+
+.email-container {
+  display: flex;
+  height: 100%;
+  background-color: #1a1a2e;
+  color: #f5f5f5;
+  list-style: none;
+}
+
+.email-sidebar {
+  width: 220px;
+  background-color: #0f0f1a;
+  padding: 16px;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.compose-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3a3af2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.compose-button:hover {
+  background-color: #5b5bf6;
+}
+
+.email-folders li {
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s;
+  margin-left: 20px;
+}
+.email-folders li:hover {
+  color: #3a3af2;
+}
+
+.email-main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Email list */
+.email-item {
+  background: #2a2a40;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+.email-item:hover {
+  transform: scale(1.01);
+  background: #353558;
+}
+.email-item.read {
+  opacity: 0.7;
+}
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.email-subject {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+.email-preview {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Email View */
+.email-view h2 {
+  margin-top: 0;
+}
+.email-body {
+  background: #2a2a40;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 6px;
+}
+.back-btn {
+  background: none;
+  border: none;
+  color: #3a3af2;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Compose Modal */
+.compose-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.compose-modal {
+  background: #222;
+  padding: 24px;
+  border-radius: 12px;
+  width: 400px;
+  animation: fadeIn 0.3s ease;
+}
+.compose-modal input,
+.compose-modal textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+.compose-modal textarea {
+  height: 100px;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.send-btn {
+  background: #3a3af2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cancel-btn {
+  background: #666;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.email-search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #333;
+  color: #fff;
+}
+
+.reply-options {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+.reply-options button {
+  background: #3a3af2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.reply-options button:hover {
+  background: #5b5bf6;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+.pagination-controls button {
+  background: #3a3af2;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pagination-controls button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+.pagination-controls span {
+  color: #aaa;
+}@media (max-width: 768px) {
+  .email-container {
+    flex-direction: column;
+  }
+
+  .email-sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .email-folders {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .email-main {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .email-item {
+    font-size: 14px;
+  }
+
+  .compose-modal {
+    width: 95%;
+    top: 10%;
+    transform: translateY(0%);
+  }
+
+  .email-search {
+    font-size: 14px;
+    padding: 6px;
+  }
+}

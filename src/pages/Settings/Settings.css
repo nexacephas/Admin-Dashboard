@@ -1,0 +1,143 @@
+.settings-page {
+  padding: 2rem;
+  color: #f0f0f0;
+  background: #1b1b2e;
+  min-height: 100vh;
+}
+
+.settings-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.setting-section {
+  margin-bottom: 2rem;
+  background: #252539;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.setting-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.setting-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: #ccc;
+}
+
+.setting-group input,
+.setting-group select {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: #1f1f2e;
+  border: 1px solid #444;
+  color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.setting-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.setting-group button {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.setting-group button:hover {
+  background: #1976d2;
+}
+
+.danger-btn {
+  background: #e53935;
+}
+
+.connected-apps {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.setting-group input[type="checkbox"] {
+  accent-color: #2196f3; /* modern browsers */
+  transform: scale(1.2);
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-top: 7px;
+}
+
+/* Optional: Label alignment for better spacing */
+.setting-group label.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.app-card {
+  background: #2e2e48;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-card p {
+  margin: 0;
+}
+.settings-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #1b1b2e;
+  color: #f0f0f0;
+}
+
+.settings-sidebar {
+  width: 250px;
+  padding: 2rem 1rem;
+  background: #18182a;
+  border-right: 1px solid #2c2c3d;
+}
+
+.settings-sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.settings-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.settings-sidebar li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.settings-sidebar li:hover,
+.settings-sidebar li.active {
+  background: #2c2c44;
+}
+
+.settings-content {
+  flex: 1;
+  padding: 2rem;
+}

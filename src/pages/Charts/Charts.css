@@ -1,0 +1,25 @@
+/* src/pages/Charts.css */
+.charts-page {
+  padding: 2rem;
+  background: #1b1b2e;
+  min-height: 100vh;
+  color: #f0f0f0;
+}
+
+.charts-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-section {
+  margin-bottom: 2.5rem;
+  background: #252539;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.chart-section h3 {
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
