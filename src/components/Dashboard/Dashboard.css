@@ -80,4 +80,7 @@ h3 {
   gap: 2rem; /* <- this causes large space */
   padding: 1.5rem;
 }
-`
+.dashboard .chart-container {
+  flex: 1;
+  min-width: 300px;
+}
